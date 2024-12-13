@@ -1,5 +1,9 @@
 # Commit Standards
 
+<p align="center">
+  <img src="img/commit-patterns.png" alt="Commit Patterns">
+</p>
+
 According to the **[Conventional Commits](https://www.conventionalcommits.org/en)** documentation, semantic commits offer a simple convention for commit messages. This convention defines a set of rules to create an explicit commit history, making it easier to build automated tools.
 
 These commits enable you and your team to quickly understand which changes were made to a code segment.
