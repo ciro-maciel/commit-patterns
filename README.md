@@ -4,37 +4,36 @@ According to the **[Conventional Commits](https://www.conventionalcommits.org/en
 
 These commits enable you and your team to quickly understand which changes were made to a code segment.
 
-Each commit is identified by a keyword, which indicate whether it’s a code change, package update, documentation adjustment, visual change, or test update.
+Each commit is identified by a keyword, which indicates whether it’s a code change, package update, documentation adjustment, visual change, or test update.
+
+## Table of Contents
+
+1. [Types and Descriptions](#types-and-descriptions)
+2. [Recommendations](#recommendations)
+3. [Commit Additions](#commit-additions)
+4. [Examples](#examples)
+5. [About the Author](#about-the-author)
+6. [License](#license)
 
 ## Types and Descriptions
 
 Semantic commits include the following structural elements (types), indicating the purpose of each commit:
 
-- **`feat`** - Indicates a **new feature** in the code (relates to the MINOR in semantic versioning).
-
-- **`fix`** - Indicates that the code **fixes a bug** (relates to the PATCH in semantic versioning).
-
-- **`docs`** - Marks **documentation changes**, such as updates in the README. (No code changes included).
-
-- **`test`** - Used for **test modifications** like creating, updating, or deleting unit tests. (No code changes included).
-
-- **`build`** - Used for modifications in **build files and dependencies**.
-
-- **`perf`** - Identifies **performance-related code changes**.
-
-- **`style`** - Indicates **formatting adjustments** (e.g., semicolons, trailing spaces, linting) that don’t affect code functionality.
-
-- **`refactor`** - Refers to **refactoring** without changing functionality, such as code restructuring or performance enhancements from code reviews.
-
-- **`chore`** - Indicates updates in **build tasks, admin configurations, or packages**, like adding files to `.gitignore`. (No code changes included).
-
-- **`ci`** - Refers to changes related to **continuous integration**.
-
-- **`raw`** - Used for changes in **configuration files, data, features, or parameters**.
-
-- **`cleanup`** - Removes commented code, unnecessary sections, or other cleanup actions for better **code readability and maintainability**.
-
-- **`remove`** - Indicates **deletion of obsolete or unused files, directories, or functionalities**, maintaining project organization.
+| **Type**      | **Description**                                                                                             |
+|---------------|-------------------------------------------------------------------------------------------------------------|
+| `feat`        | Indicates a **new feature** in the code (relates to the MINOR in semantic versioning).                      |
+| `fix`         | Indicates that the code **fixes a bug** (relates to the PATCH in semantic versioning).                      |
+| `docs`        | Marks **documentation changes**, such as updates in the README. (No code changes included).                |
+| `test`        | Used for **test modifications** like creating, updating, or deleting unit tests. (No code changes included).|
+| `build`       | Used for modifications in **build files and dependencies**.                                                |
+| `perf`        | Identifies **performance-related code changes**.                                                           |
+| `style`       | Indicates **formatting adjustments** (e.g., semicolons, trailing spaces, linting) that don’t affect code functionality.|
+| `refactor`    | Refers to **refactoring** without changing functionality, such as code restructuring or performance enhancements from code reviews.|
+| `chore`       | Indicates updates in **build tasks, admin configurations, or packages**, like adding files to `.gitignore`. (No code changes included).|
+| `ci`          | Refers to changes related to **continuous integration**.                                                   |
+| `raw`         | Used for changes in **configuration files, data, features, or parameters**.                                |
+| `cleanup`     | Removes commented code, unnecessary sections, or other cleanup actions for better **code readability and maintainability**.|
+| `remove`      | Indicates **deletion of obsolete or unused files, directories, or functionalities**, maintaining project organization.|
 
 ## Recommendations
 
@@ -46,106 +45,28 @@ Semantic commits include the following structural elements (types), indicating t
 
 ## Commit Additions
 
-- **Footer:** Includes the reviewer’s name and task number in Trello or Jira, e.g., `Reviewed-by: Elisandro Mello Refs #133`.
+- **Footer:** Includes the reviewer’s name and task number in Trello or Jira, e.g., `Reviewed-by: Edgar de Oliveira Refs #133`.
 - **Body:** Provides precise descriptions, showing impacts and reasons for the changes and instructions for future interventions, e.g., `see the issue for details on typos fixed`.
 - **Description:** A brief summary of the change, e.g., `correct minor typos in code`.
 
 ## Examples
 
-<table>
-  <thead>
-    <tr>
-      <th>Git Command</th>
-      <th>Result on GitHub</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <code>git commit -m "Initial commit"</code>
-      </td>
-      <td>Initial commit</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m "docs: Update README"</code>
-      </td>
-      <td>docs: Update README</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m "fix: Infinite loop at line 50"</code>
-      </td>
-      <td>fix: Infinite loop at line 50</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m "feat: Login page"</code>
-      </td>
-      <td>feat: Login page</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m "ci: Update Dockerfile"</code>
-      </td>
-      <td>ci: Update Dockerfile</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m "refactor: Convert to arrow functions"</code>
-      </td>
-      <td>refactor: Convert to arrow functions</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m "perf: Improve response time"</code>
-      </td>
-      <td>perf: Improve response time</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m "fix: Revert inefficient changes"</code>
-      </td>
-      <td>fix: Revert inefficient changes</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m "feat: CSS styling for form"</code>
-      </td>
-      <td>feat: CSS styling for form</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m "test: Add new test"</code>
-      </td>
-      <td>test: Add new test</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m "docs: Comments for LoremIpsum() function"</code>
-      </td>
-      <td>docs: Comments for LoremIpsum() function</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m "raw: RAW Data for year YYYY"</code>
-      </td>
-      <td>raw: RAW Data for year YYYY</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m "cleanup: Remove commented code and unused variables in form validation function"</code>
-      </td>
-      <td>cleanup: Remove commented code and unused variables in form validation function</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m "remove: Delete unused project files to maintain organization"</code>
-      </td>
-      <td>remove: Delete unused project files to maintain organization</td>
-    </tr>
-  </tbody>
-</table>
+| Git Command                                                                       | Result on GitHub                                                              |
+|----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| `git commit -m "Initial commit"`                                               | Initial commit                                                                |
+| `git commit -m "docs: Update README"`                                          | docs: Update README                                                           |
+| `git commit -m "fix: Infinite loop at line 50"`                                | fix: Infinite loop at line 50                                                 |
+| `git commit -m "feat: Login page"`                                             | feat: Login page                                                              |
+| `git commit -m "ci: Update Dockerfile"`                                        | ci: Update Dockerfile                                                         |
+| `git commit -m "refactor: Convert to arrow functions"`                         | refactor: Convert to arrow functions                                          |
+| `git commit -m "perf: Improve response time"`                                  | perf: Improve response time                                                   |
+| `git commit -m "fix: Revert inefficient changes"`                              | fix: Revert inefficient changes                                               |
+| `git commit -m "feat: CSS styling for form"`                                   | feat: CSS styling for form                                                    |
+| `git commit -m "test: Add new test"`                                           | test: Add new test                                                            |
+| `git commit -m "docs: Comments for LoremIpsum() function"`                    | docs: Comments for LoremIpsum() function                                      |
+| `git commit -m "raw: RAW Data for year YYYY"`                                  | raw: RAW Data for year YYYY                                                   |
+| `git commit -m "cleanup: Remove commented code and unused variables in form validation function"` | cleanup: Remove commented code and unused variables in form validation function |
+| `git commit -m "remove: Delete unused project files to maintain organization"` | remove: Delete unused project files to maintain organization                  |
 
 ## About the Author
 
